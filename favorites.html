@@ -1,0 +1,124 @@
+<head>
+    <title>Favorites</title>
+    <style type="text/css">
+        body{
+            font-family:sans-serif;
+            background-color:#ffaf4d;
+        }
+        #navigation ul{
+            list-style:none;
+        }
+        #navigation ul li{
+            display: inline-block;
+            padding: 10px;
+        }
+        #navigation {
+            height: 80px;
+            border-bottom: 1px solid #f1c68e;
+        }
+        #navigation header{
+            float: left;
+        }
+        #navigation nav{
+            float: right;
+        }
+        #navigation ul li a {
+            color: blue;
+            text-decoration: none;
+        }
+        #controls fieldset{
+            border:none;
+        }
+        #controls{
+            background: #eee;
+            padding: 15px;
+            border-left: 5px solid #ffaf4d;
+            background-color: #f9e8d2;
+        }
+        #controls label{
+            display: block;
+            text-transform: uppercase;
+            font-weight:100;
+            margin-bottom:5px;
+        }
+        #content article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+    <script type="text/javascript" src="js/favorites.js">
+    </script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="navigation">
+            <nav>
+                <!-- We'll fill this out later -->
+                <ul>
+                    <li>
+                        <a href="index.html">About Me</a>
+                    </li>
+                    <li class="active">
+                        <a href="favorites.html">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="controls">
+            <header>
+                <h2>Controls
+                    <h2>
+            </header>
+
+            <section class="control">
+                <header>
+                    <h3>New Favorite
+                        <h3>
+                </header>
+                <form action="javascript:createFavorite();" id="creator">
+                    <fieldset>
+                        <label>Title</label>
+                        <input id="creator-title" type="text" />
+                    </fieldset>
+                    <fieldset>
+                        <label>Description</label>
+                        <div>
+                            <textarea id="creator-description" rows="5">
+        </textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>Image</label>
+                        <input id="creator-media" type="text" />
+                    </fieldset>
+                    <fieldset>
+                        <button>Create</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <div id="content">
+            <header>
+                <h2>Favorites</h2>
+            </header>
+            <article class="favorite">
+                <header>
+                    <h3 class="title"> </h3>
+                </header>
+                <div class="media">
+                    <iframe src="//giphy.com/embed/6S9eFUceQiSWI" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <iframe src="//giphy.com/embed/ksJJRI1VEMoiA" width="480" height="207" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+                </div>
+                <h3 class="title">Senior Year</h3>
+                <p class="description">
+                    Senior Year has me like. Someone save me.
+                </p>
+            </article>
+
+        </div>
+    </div>
+    
+</body>

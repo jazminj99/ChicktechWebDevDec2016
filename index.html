@@ -1,0 +1,207 @@
+<head>
+    <style type="text/css">
+        body {
+            background-color: #FFE4C4;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1 {
+            font-size: 3.0em;
+            font-family: "Impact, Charcoal, sans-serif";
+            color: #A52A2A;
+            background-color:  #ffd199;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            color: #1A237E;
+            background-color: #ffd199;
+            text-align: center;
+        }
+        
+        h3 {
+            background-color: #ffd199;
+            color: #1A237E;
+            text-align: center;
+        }
+        
+        h4 {
+            background-color:  #ffd199;
+            color: #1A237E;
+            text-align: center;
+        }
+        
+        p {
+            color: #3949AB;
+            line-height: 1.5em;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        
+        li {
+            color: #3949AB;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        section {
+            max-width: 70ch;
+            border-color: transparent;
+        }
+        
+        section:hover {
+            border-left: transparent;
+        }
+        
+        section>section:hover {
+            border-color: transparent;
+        }
+             #navigation ul{
+            list-style:none;
+        }
+        #navigation ul li{
+            display: inline-block;
+            padding: 10px;
+        }
+        #navigation {
+            height: 80px;
+            border-bottom: 1px solid  #f1c68e;
+        }
+        #navigation header{
+            float: left;
+        }
+        #navigation nav{
+            float: right;
+        }
+        #navigation ul li a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+    <script src="js/mailer.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div id="navigation">
+            <nav>
+                <!-- We'll fill this out later -->
+                <ul>
+                    <li>
+                        <a href="index.html">About Me</a>
+                    </li>
+                    <li class="active">
+                        <a href="favorites.html">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+<header>
+    <h1> All About Me</h1>
+
+</header>
+
+<section>
+    <header>
+        <h2>Bio</h2>
+    </header>
+    <p> Jazmin Johnson was born in New York in 1999. She is a senior at Aquinas High School in the Bronx. She is in multiple clubs in school like String Orchestra, Yearbook, Student Council. She is not like most girls. She isn't interested in makeup or clothes,
+        matter of fact she hates shopping with a passion.</p>
+</section>
+
+<section>
+    <header>
+        <h3>Favorites</h3>
+    </header>
+    <p> Here are some of my favorite things</p>
+    <section>
+        <header>
+            <h4> Food</h4>
+        </header>
+        <ul>
+            <li>Chicken Alferdo </li>
+            <li>Filet Mingon</li>
+            <li>Parmsean Chicken</li>
+        </ul>
+        <header>
+            <h4>Movies</h4>
+        </header>
+        <ul>
+            <li>Harry Potter</li>
+            <li>The Duff</li>
+            <li>Pixels</li>
+        </ul>
+        <header>
+            <h4>Books</h4>
+            <ul>
+                <li>Harry Potter</li>
+                <li>Percy Jackson and the Olympians</li>
+                <li>Heroes of Olympus</li>
+                <li>The Kane Chronicles</li>
+                <li>The Trials of Apollo</li>
+            </ul>
+        </header>
+    </section>
+</section>
+
+
+
+<section>
+    <header>
+        <h3>Least Favorites</h3>
+    </header>
+    <p> These are some of my least favorite things</p>
+    <section>
+        <header>
+            <h4>Foods</h4>
+        </header>
+        <ul>
+            <li>Fish</li>
+            <li>Mac and Cheese</li>
+            <li>Collard Greens</li>
+        </ul>
+        <header>
+            <h4>Movies</h4>
+        </header>
+        <ul>
+            <li>Pirates of the Carribean</li>
+            <li>Nightmare before Christmas</li>
+            <li>How the Grinch Stole Christmas</li>
+        </ul>
+
+        <header>
+            <h4>Books </h4>
+        </header>
+        <ul>
+            <li>To Kill A Mockingbird</li>
+            <li>Othello</li>
+            <li>Lord of the Flies</li>
+        </ul>
+    </section>
+</section>
+<div>
+    <section>
+        <header>
+            <h2>Contact</h2>
+        </header>
+
+        <textarea id="message" rows="8" style="width:100%;" ;>
+            
+        </textarea>
+        <button onclick="mailer.send(document.getElementById('message').value)">Send</button>
+    </section>
+</div>
+
+</body>
